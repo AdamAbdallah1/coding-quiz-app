@@ -31,6 +31,11 @@ function Quiz() {
             {questionBank[0].options.map((option) => (
                 <button className="option"> {option} </button>
             ))}
+
+            <div className="nav-buttons">
+                <button> Previous </button>
+                <button> Next </button>
+            </div>
         </div>
     );
 }
