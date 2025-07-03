@@ -18,14 +18,21 @@ function Quiz() {
                 "Just a Simple Example",
                 "None of the above"
             ],
-            answer: "Paris"
+            answer: "Javascript XML"
         },
 
     ]
 
     return (
-        <div></div>
-    )
+        <div>
+            <h2> Question 1</h2>
+            <p className="question"> {questionBank[0].question} </p>
+
+            {questionBank[0].options.map((option) => (
+                <button className="option"> {option} </button>
+            ))}
+        </div>
+    );
 }
 
 export default Quiz
