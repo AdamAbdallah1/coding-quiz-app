@@ -20,8 +20,11 @@ function Quiz() {
             ],
             answer: "Javascript XML"
         },
+    ];
 
-    ]
+    function handleSelectOption(option) {
+        console.log(option)
+    }
 
     return (
         <div>
@@ -29,7 +32,7 @@ function Quiz() {
             <p className="question"> {questionBank[0].question} </p>
 
             {questionBank[0].options.map((option) => (
-                <button className="option"> {option} </button>
+                <button onClick={() => handleSelectOption(option)} className="option"> {option} </button>
             ))}
 
             <div className="nav-buttons">
