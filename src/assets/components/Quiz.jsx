@@ -37,6 +37,16 @@ function Quiz() {
         setUserAnswers(newUserAnswers);
     }
 
+    function goToNext() {
+        setCurrentQuestion(currentQuestion + 1);
+    }
+
+    function goToPrev() {
+        if (currentQuestion > 0) {
+            setCurrentQuestion(currentQuestion - 1);
+        }
+    }
+
     return (
         <div>
             <h2> Question 1</h2>
@@ -50,8 +60,8 @@ function Quiz() {
             ))}
 
             <div className="nav-buttons">
-                <button> Previous </button>
-                <button> Next </button>
+                <button onCanPlay={goToPrev}> Previous </button>
+                <button onClick={goToNext}> Next </button>
             </div>
         </div>
     );
