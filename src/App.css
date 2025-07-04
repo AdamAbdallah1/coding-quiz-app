@@ -2,14 +2,18 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: #f0f4f8;
+  background: linear-gradient(135deg, #f8c1c1, #c1d8f8, #e1c1f8);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
   color: #333;
 }
 
 .app-container {
   max-width: 600px;
   margin: 50px auto;
-  background: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -44,8 +48,8 @@ h2 {
 }
 
 .option.selected {
-  background: #90caf9;
-  border: 2px solid #42a5f5;
+  background: #e1c1f8;
+  border: 2px solid #d9a4ff;
 }
 
 .nav-buttons {
@@ -57,7 +61,7 @@ h2 {
 .nav-buttons button {
   padding: 10px 20px;
   border: none;
-  background: #42a5f5;
+  background: #f2545b;
   color: white;
   border-radius: 6px;
   cursor: pointer;
@@ -79,7 +83,7 @@ h2 {
   margin: 20px auto;
   padding: 10px 20px;
   border: none;
-  background: #42a5f5;
+  background: #3a86ff;
   color: white;
   border-radius: 6px;
   cursor: pointer;
