@@ -32,7 +32,8 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
+} 
+
 
 .start-button {
   padding: 10px 20px;
@@ -47,6 +48,19 @@ h2 {
 
 .start-button:hover {
   background: #f07b81;
+}
+
+.home-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  border: none;
+  background: #7b2cbf;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s;
 }
 
 .question {
@@ -107,7 +121,7 @@ h2 {
   margin: 20px auto;
   padding: 10px 20px;
   border: none;
-  background: #7b2cbf;
+  background: #ee676e;
   color: white;
   border-radius: 6px;
   cursor: pointer;
@@ -116,11 +130,19 @@ h2 {
 }
 
 .restart-button:hover {
-  background: #902de7;
+  background: #7b2cbf;
 }
 
 .score {
   font-size: 1.4em;
   text-align: center;
   margin: 20px 0;
+}
+
+.success {
+  color: darkgreen;
+}
+
+.failed {
+  color: darkred;
 }
