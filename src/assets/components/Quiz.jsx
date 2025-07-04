@@ -56,7 +56,9 @@ function Quiz() {
     }
 
         function restartQuiz() {
-
+            setUserAnswers(initialAnswers);
+            setCurrentQuestion(0);
+            setIsQuizFinished(false);
         }
 
     if (isQuizFinished) {
