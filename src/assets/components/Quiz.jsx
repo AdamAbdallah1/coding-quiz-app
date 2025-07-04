@@ -3,27 +3,63 @@ import Results from "./Results";
 
 function Quiz() {
     const questionBank = [
-        {
-            question: "What is the capital of France?",
-            options: ["Beirut", "London", "Paris", "Rome"],
-            answer: "Paris"
-        },
-        {
-            question: "Which language is used for web apps?",
-            options: ["PHP", "Python", "Javascript", "All"],
-            answer: "All"
-        },
-        {
-            question: "What does JSX stand for?",
-            options: [
-                "Javascript XML",
-                "Java Syntax Extention",
-                "Just a Simple Example",
-                "None of the above"
-            ],
-            answer: "Javascript XML"
-        },
+    {
+        question: "Which language runs in a web browser?",
+        options: ["Java", "C", "Python", "JavaScript"],
+        answer: "JavaScript"
+    },
+    {
+        question: "Which HTML tag is used to link a CSS file?",
+        options: ["<script>", "<style>", "<link>", "<css>"],
+        answer: "<link>"
+    },
+    {
+        question: "Which React hook is used to handle state?",
+        options: ["useState", "useEffect", "useRef", "useMemo"],
+        answer: "useState"
+    },
+    {
+        question: "Which method is used to output data in JavaScript?",
+        options: ["print()", "console.log()", "write()", "output()"],
+        answer: "console.log()"
+    },
+    {
+        question: "Which company developed React?",
+        options: ["Google", "Microsoft", "Facebook", "Twitter"],
+        answer: "Facebook"
+    },
+    {
+        question: "Which CSS property changes text color?",
+        options: ["font-color", "text-color", "color", "background-color"],
+        answer: "color"
+    },
+    {
+        question: "Which SQL statement is used to retrieve data?",
+        options: ["GET", "EXTRACT", "PULL", "SELECT"],
+        answer: "SELECT"
+    },
+    {
+        question: "Which symbol is used for comments in JavaScript?",
+        options: ["//", "#", "<!-- -->", "/* */"],
+        answer: "//"
+    },
+    {
+        question: "What does API stand for?",
+        options: [
+        "Application Programming Interface",
+        "Advanced Programming Integration",
+        "Applied Program Internet",
+        "Application Process Interaction"
+        ],
+        answer: "Application Programming Interface"
+    },
+    {
+        question: "Which HTML attribute is used for an image source?",
+        options: ["src", "href", "link", "alt"],
+        answer: "src"
+    }
     ];
+
 
     const initialAnswers = [null, null, null];
 
