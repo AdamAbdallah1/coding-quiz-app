@@ -52,7 +52,7 @@ function Quiz() {
 
     return (
         <div>
-            <h2> Question 1</h2>
+            <h2> Question {currentQuestion}</h2>
             <p className="question"> {questionBank[currentQuestion].question} </p>
 
             {questionBank[currentQuestion].options.map((option) => (
@@ -65,7 +65,7 @@ function Quiz() {
             ))}
 
             <div className="nav-buttons">
-                <button onClick={goToPrev} disabled={currentQuestion === 0}>
+                <button onClick={goToPrev}>
                     Previous
                 </button>
                 <button onClick={goToNext} disabled={!selectedAnswer}>
