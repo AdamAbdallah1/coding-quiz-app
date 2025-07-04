@@ -38,7 +38,9 @@ function Quiz() {
     }
 
     function goToNext() {
-        setCurrentQuestion(currentQuestion + 1);
+        if (currentQuestion < 2) {
+            setCurrentQuestion(currentQuestion + 1);
+        }
     }
 
     function goToPrev() {
@@ -60,8 +62,8 @@ function Quiz() {
             ))}
 
             <div className="nav-buttons">
-                <button onCanPlay={goToPrev}> Previous </button>
-                <button onClick={goToNext}> Next </button>
+                <button onClick={goToPrev} disabled={currentQuestion === 0}> Previous </button>
+                <button onClick={goToNext} disabled={currentQuestion === 2}> Next </button>
             </div>
         </div>
     );
