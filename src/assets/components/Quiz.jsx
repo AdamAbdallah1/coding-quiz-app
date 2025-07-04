@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { use, useState } from "react";
 import Results from "./Results";
 
 function Quiz() {
@@ -56,7 +56,7 @@ function Quiz() {
     }
 
     if (isQuizFinished) {
-        return <Results />;
+        return <Results userAnswers={userAnswers} questionBank={questionBank} />;
     }
 
     return (
