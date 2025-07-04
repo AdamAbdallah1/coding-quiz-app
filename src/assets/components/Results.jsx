@@ -14,9 +14,9 @@ function Results({ questionBank, userAnswers, restartQuiz }) {
 
     function calcResult() {
         if (score < 5) {
-            return "Test Failed"
+            return "Quiz Failed"
         } else {
-            return "Test Completed"
+            return "Quiz Completed"
         }
     }
 
