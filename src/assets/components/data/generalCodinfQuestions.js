@@ -15,3 +15,5 @@ const generalCodingQuestions = [
     answer: "Circular"
   }
 ];
+
+export default generalCodingQuestions
