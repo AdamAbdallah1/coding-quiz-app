@@ -17,7 +17,7 @@ function Results({ questionBank, userAnswers, restartQuiz, returnToHome }) {
   const score = getScore();
 
   function calcResult() {
-    if (score >= 2) {
+    if (score >= 5) {
       return "Quiz Completed";
     } else {
       return "Quiz Failed";
