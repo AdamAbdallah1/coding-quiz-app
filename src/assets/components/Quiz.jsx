@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 function Quiz() {
     const questionBank = [
         {
@@ -22,17 +24,29 @@ function Quiz() {
         },
     ];
 
+    const initialAnswers = [null, null, null];
+
+    const [userAnswers, setUserAnswers] = useState(initialAnswers);
+
+    const [currentQuestion, setCurrentQuestion] = useState(0);
+
     function handleSelectOption(option) {
-        console.log(option)
+        const newUserAnswers = [...userAnswers];
+        newUserAnswers[currentQuestion] = option;
+
+        setUserAnswers(newUserAnswers);
     }
 
     return (
         <div>
             <h2> Question 1</h2>
-            <p className="question"> {questionBank[0].question} </p>
+            <p className="question"> {questionBank[currentQuestion].question} </p>
 
-            {questionBank[0].options.map((option) => (
-                <button onClick={() => handleSelectOption(option)} className="option"> {option} </button>
+            {questionBank[currentQuestion].options.map((option) => (
+                <button className="option"  onClick={() => handleSelectOption(option)}>
+                    {""}
+                    {option} {""}
+                </button>
             ))}
 
             <div className="nav-buttons">
