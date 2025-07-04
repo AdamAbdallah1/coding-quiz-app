@@ -12,10 +12,19 @@ function Results({ questionBank, userAnswers, restartQuiz }) {
     }
     const score = getScore()
 
+    function calcResult() {
+        if (score < 5) {
+            return "Test Failed"
+        } else {
+            return "Test Completed"
+        }
+    }
+
     return (
         <div>
             <h2>Quiz Completed</h2>
             <p>Your Score: {score}/{questionBank.length}</p>
+            <p>{calcResult()}</p>
             <button className="restart-button" onClick={restartQuiz}> Restart Quiz</button>
         </div>
     )
