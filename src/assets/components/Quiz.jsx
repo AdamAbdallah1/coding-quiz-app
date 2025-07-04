@@ -66,12 +66,11 @@ function Quiz() {
 
             <div className="nav-buttons">
                 <button onClick={goToPrev} disabled={currentQuestion === 0}>
-                    {""}
-                    Previous {""}
+                    Previous
                 </button>
                 <button onClick={goToNext} disabled={!selectedAnswer}>
-                    {""}
-                    Next {""}
+                    {currentQuestion === questionBank.length - 1 ? "Finsih Quiz" : "Next"}
+
                 </button>
             </div>
         </div>
