@@ -3,16 +3,14 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Quiz from './assets/components/Quiz'
+import Home from './assets/components/Home'
 
 function App() {
   
 
   return (
-    <div className='app-container'>
-
-      <h1>Quiz App</h1>
-    
-      <Quiz />
+    <div className='app-container'>    
+      <Home />
     </div>
   )
 }
