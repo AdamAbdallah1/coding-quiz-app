@@ -28,6 +28,12 @@ h2 {
   margin-bottom: 20px;
 }
 
+.quizes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .start-button {
   padding: 10px 20px;
   border: none;
